@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "setupspark"
+version = "0.1.0"
+description = "Library to download and setup spark"
+authors = ["Narendra Babu Oggu <narendrababuoggu393@gmail.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.6"
+requests = "^2.25.1"
+xtarfile = "^0.1.0"
+wget = "^3.2"
+
+[tool.poetry.dev-dependencies]
+pylint = "^2.6.0"
+six = "^1.15.0"
+
+
+[build-system]
+requires = ["setuptools", "poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
