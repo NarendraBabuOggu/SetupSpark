@@ -1,0 +1,6 @@
+--spark-version=2.4.7
+--spark-path=D:\BigData\spark
+--hadoop-version=2.7.7
+--hadoop
+--hadoop-path=D:\BigData\hadoop
+-l=INFO
