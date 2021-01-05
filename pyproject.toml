@@ -1,20 +1,49 @@
 [tool.poetry]
-name = "setupspark"
+name = "setup-spark"
 version = "0.1.0"
+readme = "README.md"
+repository = "https://github.com/NarendraBabuOggu/SetupSpark.git"
+homepage = "https://github.com/NarendraBabuOggu/SetupSpark.git"
+documentation = "https://github.com/NarendraBabuOggu/SetupSpark.git"
 description = "Library to download and setup spark"
 authors = ["Narendra Babu Oggu <narendrababuoggu393@gmail.com>"]
+maintainers = ["Narendra Babu Oggu <narendrababuoggu393@gmail.com>"]
+packages = [{include = "setupspark"}]
 license = "MIT"
+keywords = ["hadoop", "spark", "setup"]
+include = ["LICENSE", "README.md"]
+exclude = [".*"]
+classifiers = [
+    "Intended Audience :: Developers",
+    "Intended Audience :: End Users/Desktop",
+    "Development Status :: 2 - Pre-Alpha",
+    "Programming Language :: Python :: 3.6",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Natural Language :: English",
+    "Operating System :: Microsoft :: Windows",
+    "Operating System :: MacOS",
+    "Operating System :: POSIX :: Linux",
+    "Topic :: Desktop Environment",
+    "Typing :: Typed"
+]
 
 [tool.poetry.dependencies]
 python = "^3.6"
 requests = "^2.25.1"
 xtarfile = "^0.1.0"
-wget = "^3.2"
+fastprogress = "^1.0.0"
 
 [tool.poetry.dev-dependencies]
-pylint = "^2.6.0"
-six = "^1.15.0"
+unittest = "^0.0"
+pytest = "^6.2.1"
 
+[tool.poetry.scripts]
+setupspark = "setupspark.setup:run"
+
+[tool.poetry.urls]
+"Github Page" = "https://github.com/NarendraBabuOggu/SetupSpark.git"
 
 [build-system]
 requires = ["setuptools", "poetry-core>=1.0.0"]
